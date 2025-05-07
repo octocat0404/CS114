@@ -46,7 +46,7 @@ with col1:
 with col2:
     input_opt = sac.segmented(
         items=[
-            sac.SegmentedItem(label='File (CSV)', icon='file-earmark-excel'),
+            sac.SegmentedItem(label='File (CSV)', icon='filetype-csv'),
             sac.SegmentedItem(label='Sentence', icon='alphabet-uppercase'),
         ],
         label='### 🔗 Chọn Cách Nhập Dữ Liệu', color='green', align='left', return_index=True,
