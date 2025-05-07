@@ -39,8 +39,9 @@ with col1:
         ],
         label='### 📖 Chọn Phương Pháp Phân Loại', color='#F7931E', align='left', return_index=True,
     )
-    
-    skl = sac.switch(label='<font color="#29ABE2">**Scikit-learn**</font>', align='left', size='md', on_color='blue')
+
+    if algo == 0 or algo == 1:
+        skl = sac.switch(label='<font color="#29ABE2">**Scikit-learn**</font>', align='left', size='md', on_color='blue')
 
 # Right - Input Type
 with col2:
