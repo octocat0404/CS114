@@ -1,9 +1,9 @@
 import pandas as pd
 from pathlib import Path
 
-train = pd.read_csv(Path('./Data/train.csv'))
-test  = pd.read_csv(Path('./Data/test.csv'))
-val   = pd.read_csv(Path('./Data/valid.csv'))
+train = pd.read_csv(Path('./data/train.csv'))
+test  = pd.read_csv(Path('./data/test.csv'))
+val   = pd.read_csv(Path('./data/valid.csv'))
 
 # Chia dữ liệu theo từng lớp
 class_0 = train[train['sentiment'] == 0]
@@ -159,4 +159,4 @@ print(classification_report(y_test, y_pred))
 
 import joblib 
 
-joblib.dump(mnb, './Model/naive_bayes.sav', compress=0)
+joblib.dump(mnb, './model/naive_bayes.sav', compress=0)
