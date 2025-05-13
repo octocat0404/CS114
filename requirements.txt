@@ -1,0 +1,8 @@
+streamlit
+streamlit_antd_components
+numpy
+pandas
+scikit-learn
+transformers
+underthesea
+pyvi
