@@ -160,3 +160,4 @@ print(classification_report(y_test, y_pred))
 import joblib 
 
 joblib.dump(mnb, './model/naive_bayes.sav', compress=0)
+joblib.dump(pd.DataFrame(classification_report(y_test, y_pred, output_dict=True)).transpose(), './eval/naive_bayes.sav', compress=0)

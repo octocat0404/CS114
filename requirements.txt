@@ -6,3 +6,4 @@ scikit-learn
 transformers
 underthesea
 pyvi
+regex
